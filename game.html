@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js"></script>
+    
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Dice game</h1>
+    <div id="dieContainer" class="dice"></div>
+    <div class="containerDice">
+        <p class="rolltext">Choose number of dice to roll between 3 and 6</p>  
+        <input id="diceNum" type="text" value="3">
+    </div>
+    <div class="textcontainer"><h3>Rules of the game</h3><table style="width:100%">
+        <tr>
+          <th>Description</th>
+          <th>Example
+            (with four dice)</th> 
+          <th>Example Points Calculation</th>
+        </tr>
+        <tr>
+          <td>All dice have the same value (+60)</td>
+          <td>3,3,3,3</td>
+          <td>60 + 3 + 3 + 3 + 3 = 72</td>
+        </tr>
+        <tr>
+          <td>Dice have the same value apart from 1 (+40)</td>
+          <td>4,4,4,6</td>
+          <td>40 + 4 + 4 + 4 + 6 = 58</td>
+        </tr>
+        <tr>
+          <td>A run sequence(straight) (+20)</td>
+          <td>3,4,5,6</td>
+          <td>20 + 3 + 4 + 5 + 6 = 38</td>
+        </tr>
+        <tr>
+            <td>All dice have different values (not a run) (+0)</td>
+            <td>4,5,3,1</td>
+            <td>4 + 5 + 3 + 1 = 13</td>
+          </tr>
+          <tr>
+            <td>Other outcome</td>
+            <td>4,5,3,3</td>
+            <td>0</td>
+          </tr>
+      </table></div>
+    <div class="diceimages">
+        <img src="dice-1.png" alt="By derivative work:https://commons.wikimedia.org/wiki/File:Alea_1.png#/media/File:Alea_1.png" id="dice">
+        <img src="dice-1.png" alt="By derivative work:https://commons.wikimedia.org/wiki/File:Alea_2.png#/media/File:Alea_2.png" id="dice1">
+        <img src="dice-1.png" alt="By derivative work:https://commons.wikimedia.org/wiki/File:Alea_3.png#/media/File:Alea_3.png" id="dice2">
+        <img src="dice-1.png" alt="By derivative work:https://commons.wikimedia.org/wiki/File:Alea_4.png#/media/File:Alea_4.png" id="dice3" style="display: none;">
+        <img src="dice-1.png" alt="By derivative work:https://commons.wikimedia.org/wiki/File:Alea_5.png#/media/File:Alea_5.png" id="dice4" style="display: none;" >
+        <img src="dice-1.png" alt="By derivative work:https://commons.wikimedia.org/wiki/File:Alea_6.png#/media/File:Alea_6.png" id="dice5" style="display: none;">
+      <div id="alert"></div>
+      
+      
+      </div>
+    <div class="roundcontainer"><h2>Round: </h2><div id="roundNum" class="roundNumber">0</div></div>
+    
+    <div class="scorecontainer"><h2>Round score: </h2>
+        <div id="roundScore" class="roundTotal">0</div></div>
+        <div class="totalcontainer">
+            <h2 class="scoretitle">Total score: </h2>
+            <div id="TotalScore" class="ScoreTotal">0</div>
+        </div>
+        <div class="buttonContainer">
+            <button class ="btn-roll" onclick="rollDice()">Roll Dice</button>
+            <button class ="btn-newGame" onclick="newGame()">New Game</button>
+        <button class ="btn-help" onclick="setup()">Help</button></div>
+        
+</div>
+<footer>
+  Created by &lt;Daniel Fox&gt; (&lt;d.fox4@liverpool.ac.uk&gt;)
+  Last modification
+<!--#flastmod file="index.html" -->
+</footer>
+</body>
+</html>
