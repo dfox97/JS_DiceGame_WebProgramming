@@ -5,6 +5,7 @@ Adding 3-6 dice works, reducing dice hasnt been updated, (Have fix just need to 
 
 ![dicegame](https://user-images.githubusercontent.com/61083107/135771412-d264ff51-676b-4e44-a4f6-1a970c6d4c47.jpg)
 ![image](https://user-images.githubusercontent.com/61083107/135771466-2eb7e415-5786-4e56-8eba-44f721b44d60.png)
-Markup :  # Heading 1 #
+
+# Heading 1 #
 ![image](https://user-images.githubusercontent.com/61083107/135771486-97ba2810-5ef5-42b3-9123-7664937eaf31.png)
 
