@@ -6,7 +6,9 @@ During the setup stage the user is asked to enter the number of dice that will b
 During the play stage the game proceeds in rounds during which the program maintains a balance of points won and the number of rounds played. Initialy, both balance and number of rounds played is zero.
 
 In each round, the program first increments the number of rounds played by one, then rolls the N dice and computes the number of points won according to the following table:
+
 ![image](https://user-images.githubusercontent.com/61083107/143785642-927a5115-216d-414b-80e2-a54aba9efa75.png)
+
 The number of points won is then added to the balance of points and constitutes the balance at the end of the round.
 
 The program will then display
